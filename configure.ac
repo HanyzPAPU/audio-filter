@@ -1,7 +1,7 @@
 AC_PREREQ([2.69])
 AC_INIT([audio-filter], [0.1])
 
-AM_INIT_AUTOMAKE([-Wall -Werror foreign subdir-objects])
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 LT_INIT
 AC_PROG_CXX

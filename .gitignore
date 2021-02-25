@@ -4,7 +4,7 @@ our.err
 demo-sounds/
 demo-out/
 Makefile
-Makefile.in
+Makefile.*
 config.*
 configure
 configure.scan
@@ -18,3 +18,4 @@ autom4te.cache/
 audiofilter
 install-sh
 .vscode/
+libtool

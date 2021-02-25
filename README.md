@@ -4,7 +4,7 @@ Simple command line utility for audio effects/filters.
 
 ## Instalation
 
-`autoreconf --install && ./configure && make`
+`./autogen.sh && ./configure && make`
 
 You have to have `libfftw3-dev` and `libsndfile1-dev` and `c++ 17` installed on your computer? (Haven't tested without them)
 
