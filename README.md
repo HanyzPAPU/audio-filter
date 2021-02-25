@@ -22,13 +22,6 @@ After you compiled the program, it is ran from the command line as such:
 
 `<window size>` - the size of the window to be used for effects, powers of 2 are reccomended, this argument is optional with a default value set to 8192.
 
-Some sample sounds and configurations are prepared in `demo-sounds` and `demo-conf` directories.
-If not said otherwise, the present sounds have been created by the autor of this program (Jan Papesch).
-
-The exceptions are:
-
-- guitar-riff.wav (taken from [here](https://freesound.org/people/pitx/sounds/16063/))
-
 ### Config file
 
 Each line of the config file stands for one filter to be used on the source audio.
