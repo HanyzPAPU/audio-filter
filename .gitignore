@@ -3,3 +3,17 @@ gprof.out
 our.err
 demo-sounds/
 demo-out/
+Makefile
+Makefile.in
+config.*
+configure
+configure.scan
+compile
+ac;pca;.m4
+autoscan.log
+depcomp
+install.sh
+missing
+autom4te.cache/
+.deps/
+audiofilter
