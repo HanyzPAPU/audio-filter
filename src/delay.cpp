@@ -36,8 +36,9 @@ void Delay::operator()(double *input, double* output, size_t size){
     
     std::swap(older_data_, newer_data_);
 
+    size_t delaysSize = delays_.size();
     for(size_t i=0; i<size; ++i){
-        for(size_t j=0; j<delays_.size(); ++j){
+        for(size_t j=0; j< delaysSize; ++j){
             if(i<delays_[j])
                 continue;
             output[i] += input_copy[i-delays_[j]] * gains_[j]; 
@@ -47,7 +48,7 @@ void Delay::operator()(double *input, double* output, size_t size){
     size_t n_s = newer_data_.size();
     //Save the delayed samples that would lie out of the window
     for(size_t i=size; i<size + n_s; ++i){
-        for(size_t j=0; j<delays_.size(); ++j){
+        for(size_t j=0; j<delaysSize; ++j){
             if(i-delays_[j]>=size)
                 continue;
             newer_data_[i-size] += input_copy[i-delays_[j]] * gains_[j];
