@@ -7,8 +7,7 @@ LT_INIT
 AC_PROG_CXX
 
 AC_CONFIG_SRCDIR([src/])
-
-
+AC_CONFIG_MACRO_DIRS([m4])
 
 AC_CHECK_LIB([fftw3], [fftw_cleanup])
 AC_CHECK_LIB([sndfile], [sf_open])

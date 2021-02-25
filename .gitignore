@@ -22,3 +22,4 @@ libtool
 m4/
 .libs/
 ltmain.sh
+src/*.o
