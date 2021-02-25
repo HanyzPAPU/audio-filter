@@ -15,7 +15,7 @@ void PitchShift::shift_complex(const std::vector<std::tuple<double,double>> &in,
     //Do the pitch shift
     for(size_t i=0; i<out_fft.get_complex_c(); ++i){
         double x = i*ammount;
-        size_t new_id = (size_t)std::round(x);
+        size_t new_id = (size_t)std::floor(x+0.5);
 
         if(x<0 || new_id >= out_fft.get_complex_c())
             break;
