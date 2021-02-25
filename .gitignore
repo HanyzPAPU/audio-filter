@@ -12,8 +12,8 @@ compile
 ac;pca;.m4
 autoscan.log
 depcomp
-install.sh
 missing
 autom4te.cache/
 .deps/
 audiofilter
+install-sh
