@@ -9,7 +9,7 @@ config.*
 configure
 configure.scan
 compile
-ac;pca;.m4
+aclocal.m4
 autoscan.log
 depcomp
 missing
