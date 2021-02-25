@@ -19,3 +19,5 @@ audiofilter
 install-sh
 .vscode/
 libtool
+m4/
+.libs/
