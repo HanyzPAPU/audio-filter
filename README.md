@@ -1,13 +1,12 @@
-# papesch
+# Audio Filter
+
+Simple command line utility for audio effects/filters.
 
 ## Instalation
 
-You have to have libfftw3-dev and libsndfile1-dev installed on your computer.
-Then you simply use make to compile the program. The binary will be located in bin/audio-filter.
+`autoreconf --install && ./configure && make`
 
-I use the c++17 `<filesystem>` header, which I had to use via the experimental namespace, this may very
-on your computer. If this is a problem, remove every instance of `experimental` and any non-alphanumeric characters after
-in `main.cpp`.
+You have to have `libfftw3-dev` and `libsndfile1-dev` and `c++ 17` installed on your computer? (Haven't tested without them)
 
 ## Usage
 
