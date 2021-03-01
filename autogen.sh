@@ -15,7 +15,7 @@ echo "ACLOCAL_AMFLAGS = -I m4" >>$OUT
 
 echo "bin_PROGRAMS = ${NAME}" >>$OUT
 echo "${NAME}_SOURCES = `( find src/ -type f -name \*.c ; find src/ -type f -name \*.cpp ) |tr \"\n\" \" \" ` " >>$OUT
-echo "noinst_HEADERS = `find src/ -type f -name \*.h |tr \"\n\" \" \" `" >>$OUT
+echo "noinst_HEADERS = `find src/ -type f -name \*.hpp |tr \"\n\" \" \" `" >>$OUT
 echo "AM_CPPFLAGS = -I\$(top_srcdir)" >>$OUT
 echo "AM_CFLAGS = -Wall" >>$OUT
 echo "${NAME}_CPPFLAGS = \$(FFTW3_CFLAGS)" >>$OUT
